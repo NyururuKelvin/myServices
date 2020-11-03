@@ -111,8 +111,8 @@ USE_TZ = True
 
 # Cors configurations
 CORS_URLS_REGEX = config('CORS_URLS_REGEX')
-CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS')
-CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS')
+CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS',cast=Csv())
+CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS', cast=Csv())
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
