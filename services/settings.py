@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'database.apps.DatabaseConfig',
     'myservices.apps.MyservicesConfig',
     'django.contrib.admin',
@@ -31,6 +32,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -107,7 +109,10 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+# Cors configurations
+CORS_URLS_REGEX = config('CORS_URLS_REGEX')
+CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS')
+CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
