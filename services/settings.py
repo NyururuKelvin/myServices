@@ -20,6 +20,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_registration',
+    'api_auth',
     'classViews',
     'rest_framework',
     'corsheaders',
