@@ -3,6 +3,7 @@ from django.contrib import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('classViews.urls'))
-
+    path('api/', include('classViews.urls')),
+    path('api/accounts/', include('api_auth.urls')),
 ]
+
