@@ -1,0 +1,12 @@
+.container-fluid{
+    background-color: rgb(236, 233, 233);
+    height: 100vh;
+}
+
+.card{
+    margin-top: 4%;
+}
+
+h3{
+    margin-top: 2%;
+}
