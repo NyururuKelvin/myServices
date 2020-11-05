@@ -20,6 +20,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'classViews',
+    'rest_framework',
     'corsheaders',
     'database.apps.DatabaseConfig',
     'myservices.apps.MyservicesConfig',
