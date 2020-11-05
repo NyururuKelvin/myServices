@@ -123,6 +123,7 @@
   },
   "defaultProject": "front",
   "cli": {
-    "analytics": false
+    "analytics": "5d385b31-96e2-4478-9b3a-b50d0739a3ea"
+
   }
 }
