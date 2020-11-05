@@ -20,8 +20,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'api_auth',
     'classViews',
     'rest_framework',
+    'rest_framework.authtoken',
+    'knox',
     'corsheaders',
     'database.apps.DatabaseConfig',
     'myservices.apps.MyservicesConfig',
@@ -119,3 +122,24 @@ CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS', cast=Csv())
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+REST_REGISTRATION = {
+    'REGISTER_VERIFICATION_ENABLED': False,
+    'REGISTER_EMAIL_VERIFICATION_ENABLED': False,
+    'RESET_PASSWORD_VERIFICATION_ENABLED': False,
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    # 'REGISTER_VERIFICATION_URL': 'https://frontend-host/verify-user/',
+    # 'RESET_PASSWORD_VERIFICATION_URL': 'https://frontend-host/reset-password/',
+    # 'REGISTER_EMAIL_VERIFICATION_URL': 'https://frontend-host/verify-email/',
+    #
+    # 'VERIFICATION_FROM_EMAIL': 'no-reply@example.com',
+}
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # 'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        'knox.auth.TokenAuthentication',
+    ]
+}
