@@ -1,25 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 import { BusinessComponent } from './business/business.component';
 import { BslistComponent } from './bslist/bslist.component';
- ft_business.list
-
 import { RegisterComponent } from './register/register.component'
-front_development
 
 @NgModule({
   declarations: [
     AppComponent,
     BusinessComponent,
- ft_business.list
-    BslistComponent,
+    ft_business.list,
     BslistComponent,
     RegisterComponent,
-front_development
-front_development
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule
