@@ -1,5 +1,5 @@
 .card{
-    
+
     margin-top: 30px;
     border-radius: 4px;
     background: #fff;
@@ -11,4 +11,13 @@
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgb(201, 199, 198), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.container-fluid{
+    background-color: rgb(201, 199, 198);
+    height: 100vh;
+}
+
+.my{
+    background-image: url(https://www.softwaresuggest.com/blog/wp-content/uploads/2019/08/Challenges-of-business-service-monitoring-in-the-internet-of-services.png);
 }
