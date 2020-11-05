@@ -1,7 +1,8 @@
 legend{
-    color: brown;
+    color: rgb(201, 199, 198);
     text-align: center;
     border-bottom: rgb(201, 199, 198) 1px solid;
+    font-family: 'Metal Mania', cursive;
 }
 .container-fluid{
     background-color: rgb(201, 199, 198);
@@ -20,4 +21,7 @@ legend{
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgb(201, 199, 198), 0 4px 8px rgba(0, 0, 0, .06);
+}
+button{
+    padding: 1.5px;
 }
