@@ -1,4 +1,6 @@
 import os
+
+import django_heroku
 from decouple import config, Csv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -75,12 +77,12 @@ if config("MODE") == 'dev':
     }
 else:
     DATABASES = {
-        'default': dj_database_url.config(
+        'default': django_heroku.dj_database_url.config(
             default=config('DATABASE_URL')
         )
     }
 
-db_from_env = dj_database_url.config(conn_max_age=500)
+db_from_env = django_heroku.dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
