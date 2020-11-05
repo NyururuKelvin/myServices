@@ -1,0 +1,8 @@
+h3{
+    color: brown;
+    text-align: center;
+}
+.container-fluid{
+    background-color: rgb(201, 199, 198);
+    height: 100vh;
+}
