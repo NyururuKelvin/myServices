@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BusinessComponent } from './business/business.component';
 import { BslistComponent } from './bslist/bslist.component';
-import { RegisterComponent } from './register/register.component'
+import { RegisterComponent } from './register/register.component';
+import { HomepageComponent } from './homepage/homepage.component'
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { RegisterComponent } from './register/register.component'
     BslistComponent,
     RegisterComponent,
     LoginComponent,
+    HomepageComponent,
 
   ],
   imports: [

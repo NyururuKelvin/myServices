@@ -1,0 +1,13 @@
+button{
+    border: none;
+    border-radius: 4px;
+}
+
+.bg{
+    background-image: url('https://www.wespeakiot.com/wp-content/uploads/2017/12/when-products-turn-into-smart-services.jpg');
+    height: 85vh;
+}
+.jumbotron-fluid{
+    text-align: center;
+    margin-left: 10%;
+}
