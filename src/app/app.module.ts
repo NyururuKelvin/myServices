@@ -7,7 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { BusinessComponent } from './business/business.component';
 import { BslistComponent } from './bslist/bslist.component';
 import { RegisterComponent } from './register/register.component';
-import { HomepageComponent } from './homepage/homepage.component'
+import { HomepageComponent } from './homepage/homepage.component';
+import { EmailComponent } from './email/email.component'
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomepageComponent } from './homepage/homepage.component'
     RegisterComponent,
     LoginComponent,
     HomepageComponent,
+    EmailComponent,
 
   ],
   imports: [
