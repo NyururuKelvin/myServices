@@ -1,7 +1,8 @@
 legend{
-    color: brown;
+    color: rgb(201, 199, 198);
     text-align: center;
     border-bottom: rgb(201, 199, 198) 1px solid;
+    font-family: 'Metal Mania', cursive;
 }
 .container-fluid{
     background-color: rgb(201, 199, 198);
