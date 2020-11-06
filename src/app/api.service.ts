@@ -16,6 +16,9 @@ export class ApiService {
   loginUser(userData): Observable<any> {
     return this.http.post('https://dj-services-api.herokuapp.com/api/accounts/login', userData);
   }
+  getServices():Observable<any>{
+    return  this.http.get('https://dj-services-api.herokuapp.com/api/service');
+  }
 
 }
 
