@@ -11,6 +11,7 @@ import { ApiService } from './api.service';
 import { FormsModule } from '@angular/forms';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import {AppRoutingModule} from "./app-routing.module";
 
 
 @NgModule({
@@ -22,13 +23,14 @@ import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
     LoginComponent,
     ServicedetailsComponent,
   ],
-  
+
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+    NgProgressHttpClientModule,
+    AppRoutingModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/api.service'
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { ApiService } from 'src/app/api.service'
 })
 export class LoginComponent implements OnInit {
   loggin;
-  constructor(private apiServive: ApiService) { }
+  constructor(private apiServive: ApiService, private router: Router) { }
 
   ngOnInit(){
     this.loggin = {
@@ -21,7 +22,7 @@ export class LoginComponent implements OnInit {
   loginUser() {
     this.apiServive.loginUser(this.loggin).subscribe(
       response => {
-        alert('User ' + this.loggin.username + 'loged in Succesfully!')
+        alert('User ' + this.loggin.username + 'loged in Succesfully!');
       },
       error => console.log('error', error)
     );
