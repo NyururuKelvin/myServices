@@ -19,10 +19,14 @@ export class LoginComponent implements OnInit {
 
     };
   }
+  redirectToHomepage(){
+    this.router.navigate(['']);
+  }
   loginUser() {
     this.apiServive.loginUser(this.loggin).subscribe(
       response => {
-        alert('User ' + this.loggin.username + 'loged in Succesfully!');
+        console.log(response);
+        this.redirectToHomepage();
       },
       error => console.log('error', error)
     );
